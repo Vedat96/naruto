@@ -35,7 +35,7 @@ body{background-color: black;}
     /*margin: 0px auto;*/
     /*margin: 0 auto; */
     z-index: -50;
-    background-image:url(background.png);
+    background-image:url(images/background.png);
     background-size:25% auto;
     position: absolute;
     background-position: 0% 0px;
@@ -62,7 +62,7 @@ body{background-color: black;}
     width: 100%;
     height: 55px;
     top: 150px;
-    background-image:url(attack.gif);
+    background-image:url(images/attack.gif);
     background-size:12% auto;
     position: relative;
     background-position: 0% 0px;
@@ -74,7 +74,7 @@ body{background-color: black;}
     width: 110%;
     height: 65px;
     top: 140px;
-    background-image:url(dead.gif);
+    background-image:url(images/dead.gif);
     background-size:13% auto;
     position: relative;
     background-position: 0% 0px;
@@ -87,7 +87,7 @@ body{background-color: black;}
     height: 55px;
     top: 155px;
     z-index: 1;
-    background-image:url(naruto.gif);
+    background-image:url(images/naruto.gif);
     background-size:10% auto;
     position: relative;
     background-position: 100% 0px;
@@ -118,7 +118,7 @@ body{background-color: black;}
     z-index: -1;
     top: 175px;
     filter: invert(100%);
-    background-image:url(shuriken.png);
+    background-image:url(images/shuriken.png);
     background-size:100% auto;
     background-position: 0% 0px;
     animation: shurikenx 1s infinite linear;
@@ -142,7 +142,7 @@ body{background-color: black;}
     /*left: 500px;*/
       /*filter: saturate(800%);*/
     filter: invert(100%);
-    background-image:url(shuriken.png);
+    background-image:url(images/shuriken.png);
     background-size:100% auto;
     background-position: 100% 0px;
     animation: shuriken 2s infinite linear;
@@ -160,7 +160,7 @@ body{background-color: black;}
     position: absolute;
     top: 150px;
     /*background-color: red;*/
-    background-image:url(fire.png);
+    background-image:url(images/fire.png);
     background-size:100% auto;
     background-position: 100% 0px;
     transform: rotateY(180deg);
