@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en"onclick="jump()">
+<head>
+    <meta charset="UTF-8">
+    <title>Jump Game</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="game" >
+    	<div id="background"></div>
+        <div id="naruto"></div>
+        <div id="attack"></div>
+        <div id="dead"></div>
+        <!-- <div></div> -->
+        <div id="shuriken"></div>
+        <div id="shuriken2"></div>
+        <div id="fire"></div>
+    </div>
+    <p>Score: <span id="scoreSpan"></span></p>
+
+    <div class="description">
+        <h2>How To Play:</h2>
+        <p>CLICK to jump.</p>
+        <!-- <p>Press spacebar to throw shuriken</p> -->
+        <p>Press SAPCEBAR to throw a shuriken.</p>
+        <p>Hint: You can block shuriken's.</p>
+    </div>
+
+    <!-- Background music -->
+    <!-- does not work for chromme -->
+
+     <!-- <iframe style="display: none;" allowidth="560" height="315" src="https://www.youtube.com/embed/mjjkHg5FOhk?rel=0&autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+    <!--  <iframe src="https://youtu.be/embed/mjjkHg5FOhk?rel=0&autoplay=1" allow="autoplay" id="audio" style="display: none"></iframe> -->
+    <!-- <iframe src="silence.mp3" allow="autoplay" id="audio" style="display: none"></iframe> -->
+    <audio id="player" autoplay loop>
+        <source src="music.mp3" type="audio/mp3">
+    </audio>
+
+    <!-- <embed id="music"src="music.mp3" loop="true" autostart="true" width="2" height="0"> -->
+</body>
+<script src="script.js"></script>
+</html>

@@ -1,0 +1,185 @@
+*{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+body{background-color: black;}
+.game{
+    width: 500px;
+    max-width: 500px;
+    height: 220px;
+    position: relative;
+    z-index: -100;
+    /*border: 1px solid black;*/
+    margin: auto;
+    background-color: white;
+}
+#background{
+/*    width: 100%;
+    height: 220px;
+    max-width: 500px;
+    position: absolute;
+    z-index: -2;
+    background-image:url(a.jpg);
+    background-size:100%;
+    position: absolute;
+    background-position: 0% 0px;
+    background-repeat: repeat-x;
+    animation: a linear 10s infinite;*/
+    /*width: 100%;*/
+    /*max-width: 100%;*/
+    height: 220px;
+    width: 320%;
+
+    /*height: 145px;*/
+    /*margin: 0px auto;*/
+    /*margin: 0 auto; */
+    z-index: -50;
+    background-image:url(background.png);
+    background-size:25% auto;
+    position: absolute;
+    background-position: 0% 0px;
+    background-repeat: repeat-x;
+    animation: a linear 10s infinite;
+}
+
+@keyframes a{
+    0%{left: 0px;}
+    100%{left: -500px;}
+}
+/*#character{
+    width: 20px;
+    height: 50px;
+    background-image:url(3.gif);
+    background-color: red;
+    position:relative;
+    top: 150px;
+}*/
+/*.danger{
+    position: absolute;
+}*/
+#attack{
+    width: 100%;
+    height: 55px;
+    top: 150px;
+    background-image:url(attack.gif);
+    background-size:12% auto;
+    position: relative;
+    background-position: 0% 0px;
+    background-repeat: no-repeat;
+    display: none;
+    /*transform: rotateY(180deg);*/
+}
+#dead{
+    width: 110%;
+    height: 65px;
+    top: 140px;
+    background-image:url(dead.gif);
+    background-size:13% auto;
+    position: relative;
+    background-position: 0% 0px;
+    background-repeat: no-repeat;
+    display: none;
+    /*transform: rotateY(180deg);*/
+}
+#naruto{
+    width: 100%;
+    height: 55px;
+    top: 155px;
+    z-index: 1;
+    background-image:url(naruto.gif);
+    background-size:10% auto;
+    position: relative;
+    background-position: 100% 0px;
+    background-repeat: no-repeat;
+    transform: rotateY(180deg);
+}
+/*@keyframes cat {
+  0% {
+        background-position: 120% 0px;
+  }
+  100% {
+        background-position: -20% 0px;
+  }
+}*/
+.animate{
+    animation: jump 0.3s linear;
+}
+@keyframes jump{
+    0%{top: 150px;}
+    30%{top: 100px;}
+    70%{top: 100px;}
+    100%{top: 150px;}
+}
+#shuriken2{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    z-index: -1;
+    top: 175px;
+    filter: invert(100%);
+    background-image:url(shuriken.png);
+    background-size:100% auto;
+    background-position: 0% 0px;
+    animation: shurikenx 1s infinite linear;
+    display: none;
+}
+@keyframes shurikenx{
+    0%{left: 0px;
+    transform:rotate(0deg);}
+    100%{left: 1000px;
+    transform:rotate(360deg);}
+}
+#shuriken{
+    /*background-color: blue;*/
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 175px;
+/*    border-style: solid;
+    border-width: 5px;
+    border-color: white;*/
+    /*left: 500px;*/
+      /*filter: saturate(800%);*/
+    filter: invert(100%);
+    background-image:url(shuriken.png);
+    background-size:100% auto;
+    background-position: 100% 0px;
+    animation: shuriken 2s infinite linear;
+}
+@keyframes shuriken{
+    0%{left: 1000px;
+    transform:rotate(0deg);}
+    100%{left: -20px;
+    transform:rotate(-360deg);}
+}
+
+#fire{
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 150px;
+    /*background-color: red;*/
+    background-image:url(fire.png);
+    background-size:100% auto;
+    background-position: 100% 0px;
+    transform: rotateY(180deg);
+    animation: fire 2s infinite linear;
+}
+@keyframes fire{
+    0%{left: 1000px;
+    /*transform:rotate(0deg);*/
+    }
+    100%{left: -20px;
+    /*transform:rotate(-360deg);*/
+    }
+}
+
+p{
+    text-align: center;
+    color: white;
+}
+h2{
+    text-align: center;
+    color: white;
+}
